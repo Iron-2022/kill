@@ -10,12 +10,14 @@ namespace ConsoleApp5
     {
         static void Main(string[] args)
         {
-            string s = Console.ReadLine();
-            double x = double.Parse(s);
-            double F = 2 * Math.Cos(x);
-            Console.WriteLine(x + " " +F);
-            Console.ReadKey();
-            return;
+            // Задаем значение переменной x
+            double x = 0.5;
+
+            // Вычисляем значение функции
+            double result = (Math.Sin(x) + Math.Cos(x)) / 2;
+
+            // Выводим результат на экран
+            Console.WriteLine("Результат: " + result);
         }
     }
 }
